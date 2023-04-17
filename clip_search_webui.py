@@ -79,7 +79,10 @@ TEMPLATE = """
             <div class="col">
                 <ol>
                 {{#images}}
-                    <li><img src="/static/{{key}}" width="450"> sim = {{sim}}</li>
+                    <li>
+                        <a href="/static/{{key}}" target="_blank"><img src="/static/{{key}}" width="450"></a>
+                        sim = {{sim}}
+                    </li>
                 {{/images}}
                 </ol>
             </div>
